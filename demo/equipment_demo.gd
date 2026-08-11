@@ -32,7 +32,7 @@ func _ready() -> void:
 	add_child(layer)
 
 	var title := Label.new()
-	title.text = "Equipment — Lite — Demo"
+	title.text = "Equipment (Lite) · Demo"
 	title.position = Vector2(16, 12)
 	title.add_theme_font_size_override("font_size", 16)
 	layer.add_child(title)
@@ -52,7 +52,7 @@ func _ready() -> void:
 		name_label.custom_minimum_size = Vector2(120, 0)
 		row.add_child(name_label)
 		var val_label := Label.new()
-		val_label.text = "—"
+		val_label.text = "-"
 		val_label.add_theme_font_size_override("font_size", 14)
 		val_label.modulate = Color(1, 1, 1, 0.7)
 		row.add_child(val_label)
@@ -87,5 +87,5 @@ func _refresh() -> void:
 	for slot_id in SLOTS:
 		var it: Resource = _eq.get_equipped(String(slot_id))
 		var l: Label = _slot_labels[String(slot_id)]
-		l.text = String(it.name) if it != null else "—"
+		l.text = String(it.name) if it != null else "-"
 		l.modulate = Color(1, 1, 1, 1.0) if it != null else Color(1, 1, 1, 0.5)
