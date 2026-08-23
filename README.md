@@ -1,15 +1,19 @@
-# Equipment — Lite
+# Equipment (Lite)
 
-> **New since 1.0.0:** a no-code authoring dock (create, edit, duplicate and delete equippable items from an editor panel) and a one-click **Setup** tab that drops a working component into your scene. Details in CHANGELOG.md.
+**FREE.** Fixed 4-slot equipment (weapon_main / chest / boots / ring) for Godot 4.5+. Pure GDScript. MIT.
 
-**FREE.** Fixed 4-slot equipment (weapon_main / chest / boots / ring) for Godot 4.3+. Pure GDScript. MIT.
+The working core of the [selodev Equipment addon](docs/upgrade.md). Equip items by slot, get equipped items back, listen for changes. No modifier math, no UI — bring your own paper-doll.
 
-The working core of the [CindieForge Equipment addon](docs/upgrade.md). Equip items by slot, get equipped items back, listen for changes. No modifier math, no UI — bring your own paper-doll.
+> **New in v1.1 — no-code dock.** Enable the plugin and an authoring panel appears: create, edit, duplicate, and delete your resources in a UI, no Inspector or `.tres` editing. (The Pro tier adds every field, one-click scene wiring, and the `EventTrigger` node.)
+
+## One-click setup (no code)
+
+Enable the plugin and a **Equipment · Setup** tab appears in the editor. Pick the outcome you want and press **Apply** — the Lite component is added to your scene, baked in and editable. *(Pro unlocks the full no-code wiring — gameplay triggers, bound UI, cross-system hooks.)*
 
 ## 5-minute install
 
 1. Copy `addons/equipment_lite/` into your project's `addons/` folder.
-2. Project → Project Settings → Plugins → enable **Equipment — Lite**.
+2. Project → Project Settings → Plugins → enable **Equipment (Lite)**.
 3. Add an `EquipmentLite` Node to your player.
 4. Author items with `metadata.equip_slot = "weapon_main" | "chest" | "boots" | "ring"`.
 5. `equipment.try_equip(item)`, `equipment.unequip(slot_id)`, `equipment.get_equipped(slot_id)`.
@@ -38,7 +42,6 @@ See [docs/upgrade.md](docs/upgrade.md).
 ## License
 
 MIT.
-
 
 ---
 

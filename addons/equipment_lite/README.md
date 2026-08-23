@@ -1,8 +1,8 @@
 # Equipment — Lite
 
-**FREE.** Fixed 4-slot equipment (weapon_main / chest / boots / ring) for Godot 4.3+. Pure GDScript. MIT.
+**FREE.** Fixed 4-slot equipment (weapon_main / chest / boots / ring) for Godot 4.5+. Pure GDScript. MIT.
 
-The working core of the [CindieForge Equipment addon](docs/upgrade.md). Equip items by slot, get equipped items back, listen for changes. No modifier math, no UI — bring your own paper-doll.
+The working core of the [selodev Equipment addon](docs/upgrade.md). Equip items by slot, get equipped items back, listen for changes. No modifier math, no UI — bring your own paper-doll.
 
 ## 5-minute install
 
