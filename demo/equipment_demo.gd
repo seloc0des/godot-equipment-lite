@@ -1,6 +1,5 @@
 extends Node
 
-const ItemScript := preload("res://addons/equipment_lite/item_resource.gd")
 const EquipmentLiteScript := preload("res://addons/equipment_lite/equipment_lite.gd")
 const SLOTS: Array = ["weapon_main", "chest", "boots", "ring"]
 
@@ -15,13 +14,14 @@ func _ready() -> void:
 	bg.anchor_right = 1; bg.anchor_bottom = 1
 	add_child(bg)
 
+	# The same items the Setup tab offers as examples for a pickup.
 	_items = [
-		_item("sword", "Iron Sword", "weapon_main"),
-		_item("axe", "Battle Axe", "weapon_main"),
-		_item("plate", "Plate Chest", "chest"),
-		_item("boots", "Leather Boots", "boots"),
-		_item("ring1", "Ring of Focus", "ring"),
-		_item("ring2", "Ring of Power", "ring"),
+		load("res://demo/items/iron_sword.tres"),
+		load("res://demo/items/battle_axe.tres"),
+		load("res://demo/items/plate_chest.tres"),
+		load("res://demo/items/leather_boots.tres"),
+		load("res://demo/items/ring_of_focus.tres"),
+		load("res://demo/items/ring_of_power.tres"),
 	]
 
 	_eq = EquipmentLiteScript.new()
@@ -74,13 +74,6 @@ func _ready() -> void:
 		btns.add_child(b)
 
 	_refresh()
-
-
-func _item(id_: String, name_: String, slot: String) -> Resource:
-	var it = ItemScript.new()
-	it.id = id_; it.name = name_
-	it.metadata = {"equip_slot": slot}
-	return it
 
 
 func _refresh() -> void:
