@@ -13,7 +13,7 @@
 
 The full version installs next to the Lite, in its own folder, and both run in the same project, so you can move over one piece at a time. It isn't a drop-in replacement: the class names differ, and so do some method names.
 
-`EquipmentLite` becomes `EquipmentComponent`. `equip`, `unequip`, `try_equip`, `get_equipped`, `all_equipped` and `clear` keep their names. `is_equipped` doesn't exist in the full version. The full version reads the same `equip_slot` metadata key on items.
+`EquipmentLite` becomes `EquipmentComponent`. `equip`, `unequip`, `try_equip`, `get_equipped`, `all_equipped` and `clear` keep their names. In the full version, `unequip` puts the item back in the bag and `try_equip` takes it from the bag by default. Pass `false` to keep the Lite's behavior. `is_equipped` doesn't exist in the full version. The full version reads the same `equip_slot` metadata key on items.
 
 ## Where to buy
 
