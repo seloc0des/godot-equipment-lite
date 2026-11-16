@@ -9,14 +9,15 @@
 - **Save-contract auto-join.** Equipped state lives in the Save addon's payload.
 - **Inventory addon bridge.** Set `inventory_path` and unequipped items return to the bag automatically; auto-equip on pickup from `Events.item_used`.
 
-## Migration from Lite
+## Moving from Lite
 
-Slot ids are arbitrary in Pro, but the Lite defaults (`weapon_main`, `chest`, `boots`, `ring`) are also the recommended Pro defaults. Item metadata's `equip_slot` key is identical. `try_equip()` works the same way.
+The full version installs next to the Lite, in its own folder, and both run in the same project, so you can move over one piece at a time. It isn't a drop-in replacement: the class names differ, and so do some method names.
+
+`EquipmentLite` becomes `EquipmentComponent`. `equip`, `unequip`, `try_equip`, `get_equipped`, `all_equipped` and `clear` keep their names. `is_equipped` doesn't exist in the full version. The full version reads the same `equip_slot` metadata key on items.
 
 ## Where to buy
 
-The full version is on itch.io — **https://selodev.itch.io**. Both tiers share the
-same field names and method signatures, so upgrading is a class-name swap.
+The full version is on itch.io: **https://selodev.itch.io**.
 
 ## License
 
