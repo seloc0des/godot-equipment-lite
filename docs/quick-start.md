@@ -24,7 +24,7 @@ The item carries its slot. Picking an item shows its slot in **Slot**, and Apply
 
 ## 4. Press Play
 
-Walk into it. The player puts the item on in its slot, "Equipped Iron Sword" shows at the top of the screen, and the pickup disappears. Whatever was in that slot before is replaced (Pro sends it back to the bag). Untick **Show Messages** on the pickup to turn the message off.
+Walk into it. The player puts the item on in its slot, "Equipped Iron Sword" shows at the top of the screen, and the pickup disappears. Whatever was in that slot before is replaced (the full version sends it back to the bag). Untick **Show Messages** on the pickup to turn the message off.
 
 Pickups only react to the node in the "player" group, and your player needs a collision shape to touch them. If the tab warns that nothing is the player, select your player and press **Make the selected node the player**.
 
@@ -32,7 +32,7 @@ Pickups only react to the node in the "player" group, and your player needs a co
 
 ### Slots
 
-`EquipmentLite.SLOTS = ["weapon_main", "chest", "boots", "ring"]`. These are the only slot ids. If you need different ones, that's the Pro tier (custom `EquipmentLayout`).
+`EquipmentLite.SLOTS = ["weapon_main", "chest", "boots", "ring"]`. These are the only slot ids. If you need different ones, that's the full version (custom `EquipmentLayout`).
 
 ### Item shape
 

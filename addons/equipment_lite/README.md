@@ -2,7 +2,7 @@
 
 **FREE.** Fixed 4-slot equipment (weapon_main / chest / boots / ring) for Godot 4.5+. Pure GDScript. MIT.
 
-The working core of the [selodev Equipment addon](docs/upgrade.md). Slots on your player, gear lying in the level that the player puts on by walking into it, and a plain list of what's worn on the C key. Stat bonuses and the paper doll are Pro.
+The working core of the [selodev Equipment addon](docs/upgrade.md). Slots on your player, gear lying in the level that the player puts on by walking into it, and a plain list of what's worn on the C key. Stat bonuses and the paper doll are in the full version.
 
 > **No-code docks.** Enable the plugin and two tabs appear. **Equipment · Setup** puts things in your scene. **Equippables (Lite)** creates, edits, duplicates and deletes your items, with no `.tres` editing.
 
@@ -35,13 +35,13 @@ equipment.all_equipped()                      # Dict[slot_id -> Resource]
 
 | Feature | Tier |
 |---|---|
-| Customizable slot layout (`EquipmentLayout` Resource) | Pro |
-| Two-handed conflicts | Pro |
-| Modifier aggregation (`get_modifier_sum`, `apply_modifiers`) | Pro |
-| Paper-doll UI with slot icons + drag-drop slots (Lite's list is plain text) | Pro |
-| Save-contract auto-join | Pro |
-| Inventory addon bridge (auto-return on unequip) | Pro |
-| Category gating per slot | Pro |
+| Customizable slot layout (`EquipmentLayout` Resource) | Full version |
+| Two-handed conflicts | Full version |
+| Modifier aggregation (`get_modifier_sum`, `apply_modifiers`) | Full version |
+| Paper-doll UI with slot icons + drag-drop slots (Lite's list is plain text) | Full version |
+| Save-contract auto-join | Full version |
+| Inventory addon bridge (auto-return on unequip) | Full version |
+| Category gating per slot | Full version |
 
 See [docs/upgrade.md](docs/upgrade.md).
 

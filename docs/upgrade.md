@@ -1,6 +1,6 @@
-# Upgrade to Equipment (Pro)
+# Upgrade to the full Equipment
 
-## What Pro adds
+## What the full version adds
 
 - **Customizable layout.** `EquipmentLayout` + `EquipmentSlotConfig` Resources — any slot ids, any categories per slot.
 - **Two-handed conflicts.** A two-handed weapon ejects whatever's in `weapon_off` and blocks it from re-equipping.
